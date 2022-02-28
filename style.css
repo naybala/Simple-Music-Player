@@ -14,6 +14,15 @@ body {
   height: 100vh;
   justify-content: center;
 }
+h1 {
+  color: #00cec9;
+}
+p {
+  color: #00cec9;
+  background-color: rgb(107, 105, 105);
+  border-radius: 2rem;
+  
+}
 .img{
   width: 100px;
   height: 100px;
@@ -21,10 +30,13 @@ body {
 }
 .playlistContainer {
   margin-bottom: 100px;
+  position: relative;
+  
 }
 
+
 .trackItem {
-  color: #2f57db;
+  color: #00cec9;
   font-size: 20px;
   border-bottom: 1px solid #6c757d;
   padding: 10px 0px;
@@ -57,14 +69,15 @@ body {
 
 .controls {
   font-size: 30px;
-  color: #fff;
+  color: #00cec9;
   margin: 20px 40px;
   cursor: pointer;
 }
 
-.pauseButton {
+.musicPlayer .pauseButton {
   display: none;
 }
+
 @media (min-width : 320px) and (max-width :600px){
   .playlistContainer {
     margin-bottom: 30px;

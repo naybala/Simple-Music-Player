@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #343a40;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+.img{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.playlistContainer {
+  margin-bottom: 100px;
+}
+
+.trackItem {
+  color: #2f57db;
+  font-size: 20px;
+  border-bottom: 1px solid #6c757d;
+  padding: 10px 0px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.musicPlayer {
+  display: flex;
+  flex-direction: row;
+}
+
+.currentAndTotalTime {
+  color: #fff;
+}
+
+#progressBar {
+  width: 500px;
+  height: 5px;
+  border-radius: 1rem;
+  background-color: #6c757d;
+}
+
+#currentProgress {
+  border-radius: 1rem;
+  width: 0%;
+  height: 100%;
+  background-color: #dc3545;
+}
+
+.controls {
+  font-size: 30px;
+  color: #fff;
+  margin: 20px 40px;
+  cursor: pointer;
+}
+
+.pauseButton {
+  display: none;
+}
+@media (min-width : 320px) and (max-width :600px){
+  .playlistContainer {
+    margin-bottom: 30px;
+  }
+  .trackItem{
+    font-size: 1rem;
+  }
+  
+  #progressBar {
+    width: 300px;
+    height: 5px;
+    background-color: #6c757d;
+  }
+  .musicPlayer i {
+   font-size: 2rem;
+   margin: 15px 35px;
+  }
+}
